@@ -9,11 +9,7 @@ function App() {
     <div className="App">
       
         <Header/>
-        <div className="row">
-          <div className="col-md-5">
-            <Body/>
-          </div>
-        </div>
+        <Body/>
     </div>
   );
 }

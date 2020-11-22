@@ -18,7 +18,7 @@ class Header extends React.Component {
     componentDidMount() {
 
         axios.get('https://api.openweathermap.org/data/2.5/weather?q=Urgench&appid=cef9a8bb53755c7912ae57fa1b7a93c3')
-        .then(res => { console.log(res.data)
+        .then(res => {
             this.setState({
                 name: res.data.name,
                 currLogo: `http://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`,
